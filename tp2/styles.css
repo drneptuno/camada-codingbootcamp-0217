@@ -13,6 +13,10 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 .contenedor {
     position: relative;
     max-width: 1200px;
@@ -22,6 +26,17 @@ h1 {
 .box1 {
     position: absolute;
     border: solid black;
-    width: 400px;
+    width: 380px;
     text-align: center;
+}
+
+.entrar {
+    font-size: 30px;
+    width: 190px;
+    height: 50px;
+    background-color: blue ;
+}
+
+.textarea {
+    font-size: 15px;
 }
