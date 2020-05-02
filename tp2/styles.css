@@ -18,13 +18,15 @@ h2 {
 }
 
 .contenedor {
-    position: relative;
+    position: absolute;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .box1 {
-    position: absolute;
+    
+    position: relative;
+    left: 173%;
     border: solid black;
     width: 380px;
     text-align: center;
@@ -39,4 +41,5 @@ h2 {
 
 .textarea {
     font-size: 15px;
+    border-radius: 20px;
 }
