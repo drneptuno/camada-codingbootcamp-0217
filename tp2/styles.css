@@ -8,9 +8,20 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
 .contenedor {
-    display: inline-block;
-    border: solid black;
-    max-width: 960px;
+    position: relative;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.box1 {
+    position: absolute;
+    border: solid black;
+    width: 400px;
+    text-align: center;
 }
