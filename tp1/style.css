@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Contenedor Header*/
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*Header - Aplicamos estilos a la cabecera*/
+header {
+    background-image: url(./img/face_portada.jpg);
+    background-position: center;
+    height: 650px;
+}
+
+.navegacion {
+    font-size: 20px;
+    text-align: right;
+    padding: 10px;
+}
+
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+}
