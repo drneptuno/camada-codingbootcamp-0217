@@ -4,35 +4,38 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-/*Definimos que el padding de las cajas no se aumente y tengamos las mismas medidas */
+/*Definimos el box-sizing para que el padding de las cajas no se aumente y tengamos las mismas medidas */
 * {
     box-sizing: border-box;
 }
 
+/*Definimos tamaño, color y centrado del texto principal*/
 h1 {
-    text-align: center;
     font-size: 50px;
+    text-align: center;
     color: #120136;
 }
-
+/*Definimos fuente y color del titulo secundario*/
 h2 {
     font-size: 30px;
+    color: #120136;
 }
-
+/*Definido el contenedor en el index, se lo posiciona como absoluto, con un ancho max y un margen*/
 .contenedor {
     position: absolute;
     max-width: 1200px;
     margin: 0 auto;
 }
-
+/*La caja box 1 es la contenedora del login, a la cual se le aplica una posicion relativa y se la mueve a gusto, se le da un margen solido de color, con un ancho y se lo alinea*/
 .box1 {
     position: relative; 
-    left: 170%;
+    left: 176%;
     border: solid gray;
     width: 370px;
     text-align: center;
 }
-
+/*Boton Entrar: boton definido con un tamaño de fuente, con un ancho y alto, con color blanco para las letras
+y un fondo de color sacado de https://colorhunt.co/palette/180404*/
 .entrar {
     font-size: 30px;
     width: 190px;
@@ -40,7 +43,8 @@ h2 {
     color: white;
     background-color: #120136;
 }
-
+/*Area del texto: definimos un tamaño a la fuente del placeholder, con un ancho y alto para las cajas del area
+y un border-radius para definir el contorno de las areas*/
 .textarea {
     font-size: 15px;
     width: 190px;
