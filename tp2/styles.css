@@ -1,9 +1,10 @@
+/*Importamos una fuente desde google font*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
-
+/*Definimos que el padding de las cajas no se aumente y tengamos las mismas medidas */
 * {
     box-sizing: border-box;
 }
@@ -11,6 +12,7 @@ body {
 h1 {
     text-align: center;
     font-size: 50px;
+    color: #120136;
 }
 
 h2 {
@@ -24,11 +26,10 @@ h2 {
 }
 
 .box1 {
-    
-    position: relative;
-    left: 173%;
-    border: solid black;
-    width: 380px;
+    position: relative; 
+    left: 170%;
+    border: solid gray;
+    width: 370px;
     text-align: center;
 }
 
@@ -36,10 +37,13 @@ h2 {
     font-size: 30px;
     width: 190px;
     height: 50px;
-    background-color: blue ;
+    color: white;
+    background-color: #120136;
 }
 
 .textarea {
     font-size: 15px;
-    border-radius: 20px;
+    width: 190px;
+    height: 50px;
+    border-radius: 10px;
 }
