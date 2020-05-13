@@ -1,26 +1,45 @@
-* {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+/* Al body le aplicamos un tipografia de letra, sacamos el margen (que se lo aplicara a todo el contenido y le aplicamos un gradient */
+body {
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/*Contenedor Header*/
+/* SECTOR HEADER */
+
 .contenedor {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; /* Definimos un ancho de trabajo */
+    margin: 0 auto; /* Centramos el contenido */
+    display: flex; /* Habilitamos para trabajar con flex, se posiciona todo en linea*/
+    justify-content: space-between; /* Alinea a la derecha y otro a la izquierda */
+    align-items: center; /* Definimos una alineacion centrada para los elementos */
+    padding-top: 10px; 
 }
-/*Header - Aplicamos estilos a la cabecera*/
-header {
-    background-image: url(./img/face_portada.jpg);
-    background-position: center;
-    height: 650px;
+
+h1 {
+    color: blue;
 }
 
 .navegacion {
-    font-size: 20px;
-    text-align: right;
-    padding: 10px;
+    list-style: none; /* Sacamos los puntitos de la navegacion */
 }
 
-.navegacion a {
-    color: #ffffff;
-    text-decoration: none;
+.navegacion li {
+    display: inline; /* Posicion en linea */
 }
+
+.navegacion li a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px;
+}
+
+/* Este pseudoselector me define el primer elemento de la lista, al cual le sacamos el padding */
+.navegacion:first-of-type {
+    padding: 0; 
+}
+
+/* SECTOR PRINCIPAL */
+
