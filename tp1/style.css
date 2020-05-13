@@ -43,3 +43,13 @@ h1 {
 
 /* SECTOR PRINCIPAL */
 
+.principal {
+    max-width: 1200px;
+    display: flex;
+}
+
+.principal img {
+    height: 550px; /* Definimos largo de la imagen */
+    width: 550px; /* Definimos ancho de la imagen*/
+    margin-right: 20px;
+}
