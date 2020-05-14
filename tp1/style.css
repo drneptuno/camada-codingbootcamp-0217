@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 /* Al body le aplicamos un tipografia de letra, sacamos el margen (que se lo aplicara a todo el contenido y le aplicamos un gradient */
 body {
     font-family: 'Cabin', sans-serif;
     margin: 0;
-    padding: 0;
 }
 
 /* SECTOR HEADER */
 
 .contenedor {
-    max-width: 1200px; /* Definimos un ancho de trabajo */
-    margin: 0 auto; /* Centramos el contenido */
+/*  max-width: 1200px; /* Definimos un ancho de trabajo */
+/*  margin: 0 auto; /* Centramos el contenido */
     display: flex; /* Habilitamos para trabajar con flex, se posiciona todo en linea*/
     justify-content: space-between; /* Alinea a la derecha y otro a la izquierda */
     align-items: center; /* Definimos una alineacion centrada para los elementos */
@@ -19,7 +22,7 @@ body {
 }
 
 h1 {
-    color: blue;
+    margin-left: 15px;
 }
 
 .navegacion {
@@ -31,9 +34,16 @@ h1 {
 }
 
 .navegacion li a {
-    text-decoration: none;
-    font-size: 20px;
-    margin: 20px;
+    text-decoration: none; /* Sacamos el subrayado */
+    color: rgba(0, 0, 0, 0.4); /* Utilizamos RGBA - Damos un color negro con opacidad, ultimo valor */
+    font-size: 20px; /* Tamaño de la letra */
+    margin: 20px; /* margen */
+    letter-spacing: 2px; /* Espacio entre letras */
+}
+
+
+.navegacion li a:hover{ /* Sombreado a las letras de los a en la navegacion */
+    color: rgba(0, 0, 0, 0.6);
 }
 
 /* Este pseudoselector me define el primer elemento de la lista, al cual le sacamos el padding */
@@ -43,13 +53,18 @@ h1 {
 
 /* SECTOR PRINCIPAL */
 
-.principal {
-    max-width: 1200px;
+.principal { 
     display: flex;
 }
 
-.principal img {
-    height: 33,3%; /* Definimos largo de la imagen */
-    width: 33,3%; /* Definimos ancho de la imagen*/
-    margin-right: 20px;
+.image {
+    flex: 1 0 33,3%; /* Aca definimos en la imagen que ocupe la totalidad de su espacio*/
+    margin: 15px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
 }
