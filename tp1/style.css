@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap'); /* Definimos estilo de fuente */
 
+/* NO SUMAMOS EL PADDING */
 * {
     box-sizing: border-box;
 }
@@ -13,8 +14,6 @@ body {
 /* SECTOR HEADER */
 
 .contenedor {
-/*  max-width: 1200px; /* Definimos un ancho de trabajo */
-/*  margin: 0 auto; /* Centramos el contenido */
     display: flex; /* Habilitamos para trabajar con flex, se posiciona todo en linea*/
     justify-content: space-between; /* Alinea a la derecha y otro a la izquierda */
     align-items: center; /* Definimos una alineacion centrada para los elementos */
@@ -25,12 +24,13 @@ h1 {
     margin-left: 15px;
 }
 
-.navegacion {
-    list-style: none; /* Sacamos los puntitos de la navegacion */
+.navegacion ul {
+    display: flex;
 }
 
 .navegacion li {
     display: inline; /* Posicion en linea */
+    list-style: none; /* Sacamos los puntitos de la navegacion */
 }
 
 .navegacion li a {
@@ -67,4 +67,5 @@ h1 {
     height: 100%;
     background-size: cover;
     background-position: center;
+    border-radius: 5%;
 }
