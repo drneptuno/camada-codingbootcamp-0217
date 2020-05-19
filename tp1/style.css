@@ -5,13 +5,8 @@
     box-sizing: border-box;
 }
 
-/* Aplicamos mas reseteos al html */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-
 /* Al body le aplicamos un tipografia de letra, sacamos el margen (que se lo aplicara a todo el contenido y le aplicamos un gradient */
+
 body {
     font-family: 'Cabin', sans-serif;
     margin: 0;
