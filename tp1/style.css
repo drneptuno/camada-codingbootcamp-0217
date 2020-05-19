@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/* Aplicamos mas reseteos al html */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+
 /* Al body le aplicamos un tipografia de letra, sacamos el margen (que se lo aplicara a todo el contenido y le aplicamos un gradient */
 body {
     font-family: 'Cabin', sans-serif;
@@ -21,16 +27,13 @@ body {
 }
 
 h1 {
+    color: rgba(0, 0, 0, 0.4);
     margin-left: 15px;
 }
 
-.navegacion ul {
-    display: flex;
-}
-
 .navegacion li {
-    display: inline; /* Posicion en linea */
-    list-style: none; /* Sacamos los puntitos de la navegacion */
+    display: inline-block;  /*Posicion en linea */
+    list-style: none; /*Sacamos los puntitos de la navegacion*/ 
 }
 
 .navegacion li a {
@@ -69,3 +72,4 @@ h1 {
     background-position: center;
     border-radius: 5%;
 }
+
